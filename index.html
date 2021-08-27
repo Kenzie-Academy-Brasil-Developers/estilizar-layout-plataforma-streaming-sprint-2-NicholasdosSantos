@@ -9,7 +9,9 @@
 	<title>Kenzieflix</title>
 
 	<!-- CSS -->
+	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	
 
 	<!-- FAVICON -->
 	<link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png" /> 
@@ -18,68 +20,59 @@
 	
 	<!-- CABEÇALHO -->
 	<header class="topo">
-		<figure>
+		<figure class="topo__img">
 			<img src="img/logo.png" alt="Kenzieflix">
-			<figcaption>Kenzieflix</figcaption>
 		</figure>
 	</header>
 
 	<!-- PÁGINA INICIAL -->
 	<div class="pg-home">
 		
-		<section>
+		<section class="sectionMargin">
 
-			<header>
+			<header class="pg-home__header">
 				<h2>Quem está assistindo?</h2>
 			</header>
 
 			<!-- LISTA DE USUÁRIOS -->
-			<ul>
+			<ul class="pg-home__list">
 				
 				<!-- USUÁRIO 1 -->
-				<li>
-					<figure>
-						<img src="img/avatar.png" alt="Gabriel">
+				<li class="size pg-home__user">
+					<figure class="fig">
+						<img class="image" class="icon" src="img/avatar.png" alt="Gabriel">
 						<figcaption>Gabriel</figcaption>
 					</figure>
-
-					<h3>Gabriel</h3>
 				</li>
 				
 				<!-- USUÁRIO 2 -->
-				<li>
-					<figure>
-						<img src="img/avatar1.png" alt="Maria">
+				<li class="size pg-home__user">
+					<figure class="fig">
+						<img class="image" src="img/avatar1.png" alt="Maria">
 						<figcaption>Maria</figcaption>
 					</figure>
-
-					<h3>Maria</h3>
 				</li>
 				
 				<!-- USUÁRIO 3 -->
-				<li>
-					<figure>
-						<img src="img/avatar2.png" alt="Renato">
+				<li class="size pg-home__user">
+					<figure class="fig">
+						<img class="image" src="img/avatar2.png" alt="Renato">
 						<figcaption>Renato</figcaption>
 					</figure>
-
-					<h3>Renato</h3>
 				</li>
 
 				<!-- ADICIONAR PERFIL-->
-				<li class="addPerfil">
-					<figure>
-						<img src="img/plus-sign.png" alt="Adicionar perfil">
+				<li class="size pg-home__addPerfil">
+					<figure class="fig">
+						<img class="image--disable" src="img/plus-sign.png" alt="Adicionar perfil">
 						<figcaption>Adicionar perfil</figcaption>
 					</figure>
-
-					<h3>Adicionar perfil</h3>
 				</li>
 
 			</ul>
 
-			<footer>
-				<button>Gerenciar Perfis</button>
+			<footer class="manegePerfil">
+				<button class="btn">Gerenciar Perfis</button>
 			</footer>
 
 		</section>
